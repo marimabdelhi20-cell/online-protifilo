@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mariem Abd El Hay | Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <img src="./assets/uni-logo.png" alt="University Logo" class="brand__logo">
+        <span class="brand__text" data-i18n="portfolio">Portfolio</span>
+      </a>
+       
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" data-i18n="about_title">About</a>
+        <a href="#skills" data-i18n="skills_title">Skills</a>
+        <a href="#projects" data-i18n="projects_title">Projects</a>
+        <a href="#contact" data-i18n="contact_title">Contact</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button id="themeToggle" class="btn btn--ghost" type="button" aria-label="Toggle dark mode">
+          🌙
+        </button>
+        <button id="langToggle" class="btn btn--ghost" type="button" aria-label="Switch language">
+          AR
+        </button>
+        <a class="btn" href="assets/mariem.pdf" target="_blank" rel="noopener" data-i18n="Download_cv">Download CV</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobileMenu" hidden>
+      <div class="container mobileMenu__inner">
+        <a href="#about" class="mobileLink" data-i18n="about_title">About</a>
+        <a href="#skills" class="mobileLink" data-i18n="skills_title">Skills</a>
+        <a href="#projects" class="mobileLink" data-i18n="projects_title">Projects</a>
+        <a href="#contact" class="mobileLink" data-i18n="contact_title">Contact</a>
+        <div class="mobileMenu__actions">
+          <button id="themeToggleMobile" class="btn btn--ghost" type="button">🌙</button>
+          <button id="langToggleMobile" class="btn btn--ghost" type="button">AR</button>
+          <a class="btn" href="./assets/cv.pdf" target="_blank" rel="noopener" data-i18n="Download_cv">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="home">
+    <section class="hero">
+      <div class="container hero__grid">
+        
+
+        <div class="hero__content">
+          <p class="pill" data-i18n="hero_pill">Student Specializing in Industrial and Energy Systems</p>
+
+          <h1 class="hero__title">
+            <span data-i18n="hero_hi">Hi, I'm</span>
+            <span class="hero__name" data-i18n="hero_name">Mariem Abd El Hay</span>
+          </h1>
+
+          <p class="hero__subtitle" data-i18n="hero_subtitle">
+            I am a Food Industries student at the Faculty of Industry and Energy, East Port Said Technological University.
+I seek to gain practical experience in the fields of food technology and food processing, with a focus on quality, food safety, and production process improvement.
+This portfolio presents my projects, training experiences, and the skills I am developing in preparation for the job market.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects" data-i18n="hero_btn_projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact" data-i18n="hero_btn_contact">Contact Me</a>
+          </div>
+
+          <div class="hero__meta">
+            <span class="metaItem">📍 <span data-i18n="hero_location">Ismailia, Egypt</span></span>
+            <span class="metaItem">🎓 <span data-i18n="hero_degree">East Port Said University of Technology</span></span>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="profile">
+            <div class="avatar" aria-hidden="true">
+              <!-- Replace with your photo: assets/profile.jpg -->
+              <img src="./assets/mariem.jpeg" alt="" />
+            </div>
+            <div class="profile__info">
+              <h2 class="profile__name" data-i18n="hero_name">Mariem Abd El Hay</h2>
+              <p class="profile__role" data-i18n="profile_role">Food Industrial Technology</p>
+              <div class="profile__links">
+                <a href="https://www.linkedin.com/in/mariem-abd-el-hay-190803303/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:marimabdelhi20@gmail.com">Email</a>
+                <a href="https://www.facebook.com/share/16xtssSqHk/" target="_blank" rel="noopener">facebook</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__num">3</div>
+              <div class="stat__label" data-i18n="stat_projects">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">2</div>
+              <div class="stat__label" data-i18n="stat_certificates">Certificates</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">1</div>
+              <div class="stat__label" data-i18n="stat_internships">Internships</div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="about_title">About Me</h2>
+          <p class="muted" data-i18n="about_subtitle"></p>
+        </div>
+
+        <div class="card">
+          <p data-i18n="about_text">
+            I am a student in Industrial and Energy Technology, interested in food manufacturing techniques and the development of production processes within food factories. I enjoy working on technical projects, learning modern technologies, and applying theoretical knowledge in practical environments.
+          </p>
+
+          <div class="grid2">
+            <div>
+              <h3 class="h3" data-i18n="about_highlights">Highlights</h3>
+              <ul class="list">
+                <li data-i18n="hl1">Participated in practical training in the field of food industries</li>
+                <li data-i18n="hl2">Knowledgeable in food processing operations, quality systems, and food safety</li>
+                <li data-i18n="hl3">Committed to safety procedures and teamwork in food production environments</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="h3" data-i18n="about_education">Education</h3>
+              <ul class="list">
+                <li><strong data-i18n="edu1">East Port Said Technological University</strong> — <span data-i18n="edu1b">Food Industries Program</span></li>
+                <li data-i18n="edu2">Expected Graduation: 2027</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="skills_title">Skills</h2>
+        </div>
+
+        <div class="chips">
+          <span class="chip">Food Technology and Processing</span>
+          <span class="chip">Food Quality and Safety</span>
+          <span class="chip">Production Process Development</span>
+          <span class="chip">Food Safety Standards</span>
+          <span class="chip">Information Technology in Food Production</span>
+
+        </div>
+
+        <div class="grid3">
+          <div class="card">
+            <h3 class="h3" data-i18n="skills_tech">Technical</h3>
+            <ul class="list">
+              <li>Operation and maintenance of food factory equipment</li>
+              <li>Food processing and preservation </li>
+              <li>Control of ingredients and production processes </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3" data-i18n="skills_tools">Tools</h3>
+            <ul class="list">
+              <li>Microsoft Office</li>
+              <li>Microsoft Word</li>
+              <li>Microsoft Powerpoint</li>
+
+
+
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="h3" data-i18n="skills_soft">Soft Skills</h3>
+            <ul class="list">
+              <li data-i18n="soft1">Communication</li>
+              <li data-i18n="soft2">Problem-solving</li>
+              <li data-i18n="soft3">Time management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="projects_title">Projects</h2>
+        </div>
+
+        <div class="grid3">
+          <!-- Project Card -->
+          <article class="project card">
+            <div class="project__thumb">
+              <img src="./assets/mariem..jpeg" alt="Project screenshot placeholder" />
+            </div>
+            <h3 class="h3">Seafood Processing & Quality Control Training – Abu El-Sayed Fish Factory</h3>
+            <p class="muted" data-i18n="p1_desc">Completed practical training at, focusing on fish handling, cleaning, processing, packaging, and applying food safety and quality control procedures.</p>
+            <div class="project__tags">
+              <span class="tag">Sea food processing</span><span class="tag">Food hygiene</span>
+            </div>
+            
+          </article>
+
+          <article class="project card">
+            <div class="project__thumb">
+              <img src="./assets/mariem3 .jpeg" alt="Project screenshot placeholder" />
+            </div>
+            <h3 class="h3">Field Visit – Frozen Food Processing Operations</h3>
+            <p class="muted" data-i18n="p2_desc">Field visit to , where I observed sorting and grading machines, washing and peeling equipment, cutting machines, blanching units, IQF freezing tunnels, cold storage rooms, and packaging lines. I also gained knowledge about industrial safety procedures and quality control measures applied during frozen food production.</p>
+            <div class="project__tags">
+              <span class="tag">IQF Technology</span><span class="tag">Industrial safety</span>
+            </div>
+            
+          </article>
+
+          <article class="project card">
+            <div class="project__thumb">
+              <img src="./assets/mariem4.jpeg" alt="Project screenshot placeholder" />
+            </div>
+            <h3 class="h3">Graduation Project – Production of Cooked Fish Products</h3>
+            <p class="muted" data-i18n="p3_desc">A graduation project focused on the production of cooked fish products, such as fish sausages, including the study of preservation and storage methods. The project involved processing operations, quality control, and evaluating different techniques to ensure product safety and shelf-life.</p>
+            <div class="project__tags">
+              <span class="tag">Food processing</span><span class="tag">Food preservation</span>
+            </div>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="contact_title">Contact</h2>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 class="h3" data-i18n="contact_quick">Quick Links</h3>
+            <div class="contactLinks">
+              <a class="btn" href="mailto:marimabdelhi20@gmail.com">Email</a>
+              <a class="btn btn--ghost" href="https://www.linkedin.com/in/mariem-abd-el-hay-190803303/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+
+          </div>
+
+          <form class="card form" id="contactForm">
+            <label>
+              <span data-i18n="form_name">Your name</span>
+              <input required name="name" type="text" placeholder="Name" />
+            </label>
+
+            <label>
+              <span data-i18n="form_email">Your email</span>
+              <input required name="email" type="email" placeholder="you@example.com" />
+            </label>
+
+            <label>
+              <span data-i18n="form_message">Message</span>
+              <textarea required name="message" rows="5" placeholder="Write your message..."></textarea>
+            </label>
+
+            <button class="btn" type="submit" data-i18n="form_send">Send</button>
+            
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> <span class="footerName">Mariem Abd El Hay</span></span>
+        <a href="#home" class="toTop" data-i18n="back_to_top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+   <script src="./script.js"></script> 
+</body>
+</html>
